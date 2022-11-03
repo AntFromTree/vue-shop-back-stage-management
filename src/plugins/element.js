@@ -1,4 +1,5 @@
 import Vue from 'vue'
+<<<<<<< HEAD
 import {
     Button, Form, FormItem, Input, Message,
     Container, Header, Aside, Main, Menu,
@@ -26,3 +27,8 @@ Vue.use(Col)
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.prototype.$message = Message
+=======
+import { Button } from 'element-ui'
+
+Vue.use(Button)
+>>>>>>> 97a76d379deaad1e160653f0adf8e5595599a099
