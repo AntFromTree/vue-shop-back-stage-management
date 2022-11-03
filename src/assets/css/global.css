@@ -2,7 +2,6 @@ html,body,#app{
     height: 100%;
     padding: 0;
     margin: 0;
-<<<<<<< HEAD
 }
 .el-breadcrumb{
     margin-bottom: 15px;
@@ -14,6 +13,4 @@ html,body,#app{
 .el-table{
     margin-top: 15px;
     font-size: 12px;
-=======
->>>>>>> 97a76d379deaad1e160653f0adf8e5595599a099
 }
