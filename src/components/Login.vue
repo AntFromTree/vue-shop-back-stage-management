@@ -47,11 +47,11 @@ export default {
             this.$refs.loginFormRef.validate(async (boolean, object)=> {
                 console.log(boolean);
                 if(!boolean) return;
-                // const {data: res} = await this.$http.post("login", this.loginForm);
-                // console.log(res);
-                // if(res.meta.status != 200) return this.$message.error("登录失败");
+                const {data: res} = await this.$http.post("admin/login", this.loginForm);
+                console.log(res);
+                if(res.code != 200) return this.$message.error(res.info);
                 this.$message.success("登录成功")
-                window.sessionStorage.setItem("token","502674883")
+                window.sessionStorage.setItem("token", res.body.token)
                 this.$router.push("/home")
             });
         }

@@ -5,9 +5,9 @@ import './plugins/element.js'
 import './assets/css/global.css'
 import './assets/font/iconfont.css'
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:8081/api/'
+axios.defaults.baseURL = 'http://localhost:8090/api/'
 axios.interceptors.request.use(config =>{
-  config.headers.Authorization = window.sessionStorage.getItem("token")
+  config.headers.token = window.sessionStorage.getItem("token")
   return config;
 })
 

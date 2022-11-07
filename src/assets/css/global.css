@@ -12,5 +12,8 @@ html,body,#app{
 }
 .el-table{
     margin-top: 15px;
-    font-size: 12px;
+    font-family: "微软雅黑";
+}
+.el-pagination{
+    margin-top: 15px;
 }
